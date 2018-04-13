@@ -1,4 +1,4 @@
-![a2ata3_logo](github/docs/imga2ata3_logo_cut.png)
+![a2ata3_logo](git_data/docs/img/a2ata3_logo_cut.png)
 ***
 >ArmA2 Anims To ArmA3 (A2ATA3) - mod for ArmA3 that changes the most part of movement animations in A3 to A2 animations.
 >>Warning: This mod is in development, so if you notice any problems just let me know :)
