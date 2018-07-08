@@ -1,4 +1,4 @@
-<p align="center"><img width=600 src="git_data/docs/img/a2ata3_logo_cut.png" alt="a2ata3_logo" /></p>
+<p align="center"><img width=600 src="https://i.imgur.com/9QpRrui.png" /></p>
 
 <hr />
 
@@ -10,6 +10,8 @@
   <h4 id="linkstomod"><em>Links to mod</em>:</h4>
 
   <ul>
+  <li><a href="https://github.com/maximilionus/A2ATA3/wiki"><code>GitHub WIKI</code></a></li>
+
   <li><a href="https://forums.bohemia.net/forums/topic/211773-arma-2-animations-to-arma-3-a2ata3/"><code>BI Forums Topic</code></a></li>
 
   <li><a href="https://steamcommunity.com/sharedfiles/filedetails/?id=1199493544"><code>Steam Workshop</code></a></li>

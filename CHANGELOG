@@ -1,0 +1,103 @@
+//@A2ATA3 CHANGELOG : Last Update - 21 JUNE 2018.\\
+_________________________________________________________
+v0.X.X : XX XXXX 2018
+[EDIT] @\CHANGELOG.txt was restructured
+_________________________________________________________
+v0.8.7 : 02 APR 2018
+[EDIT] New logo and icon for modification.
+[EDIT] The use of stamina while sprinting was decreased to make it equal to A3 sprint.
+[FIX] Switching from 1st to 2nd weapon - speed and interpolation -- pos: prone.
+[FIX] Switching from 3rd to 1st weapon - speed and interpolation -- pos: kneel.
+[FIX] Switching from 2nd to 1st weapon - speed and interpolation -- pos: kneel, prone.
+[FIX] Switching from 2nd to 3rd weapon - speed and interpolation -- pos: kneel.
+[FIX] Switching from 1st weapon to binoculars - speed and interpolation -- pos: prone, kneel.
+[FIX] Running with binoculars -- wrong footsteps sound source.
+_________________________________________________________
+v0.8.5 : 11 MAR 2018
+[FIX] Walking forward-right with 3rd weapon animation speed.
+[FIX] Walking with 3rd weapon sound source.
+[FIX] Walking backwards with 2nd weapon animation speed reduced.
+[FIX] Walking backwards with 3rd weapon animation speed increased.
+[FIX] Lowered 2nd weapon moving right & left animation speed reduced.
+[FIX] Lowered & Raised 2nd weapon footsteps sound sources.
+[FIX] Walking backwards with 2nd weapon animation speed
+[FIX] 2nd weapon footsteps sound source.
+[REMOVED] Tactical running forward-right while crouching with 3rd weapon animation.
+_________________________________________________________
+v0.8.1_hotfix : 17 FEB 2018
+[REMOVED] A2 Fatigue system testing was stopped due many issues and a2a_fatigue was removed for some time.
+_________________________________________________________
+v0.8 : 17 FEB 2018
+[NEW] ArmA 2 style fatigue system -- More info in "@*\README.txt".
+[EDIT] File structure reworked.
+[EDIT] Config file with animations was edited a little bit: removed all duplicated animation class names.
+[EDIT] Overall size of modification has been reduced.
+[FIX] Minor animation fixes.
+[FIX] Slow prone animation speed was reduced.
+[FIX] Crouching animations speed was fixed.
+(.bikey updated)
+_
+Work on splitting animations config file is not finished yet, so i decided to add it after it will work properly.
+_________________________________________________________
+v0.6.3 : 14 DEC 2017
+- AI walking with lowered weapon animations from A3 switched to A2 animations. | Added
+- Kneel with pistol/main_weapon footsteps sound fix. | Fix
+- Erect with pistol/main_weapon footsteps sound fix. | Fix
+(.bikey updated)
+_________________________________________________________
+v0.6.2 : 12 DEC 2017
+- Removed some prone animations that worked wrong with new A3 skeleton. | REMOVED
+(.bikey updated)
+_________________________________________________________
+v0.6.1 #HOTFIX : 3 DEC 2017
+- Error with config mismatch that caused disabling all ragdolls and "Unconscious" animation instead of ragdolls | Fixed.
+(.bikey updated)
+_________________________________________________________
+v0.6 : 3 DEC 2017
+- Changing from run to evasive with lowered/raised main weapon | interpolation fix (Erect, Crouch)
+- Walking with lowered pistol animation | speed adjust.
+- Walking with raised rifle animation | footstep sound fix.
+- Walking with lowered rifle animation | footstep sound fix.
+- Crouching with raised rifle animation | footstep sound fix.
+- Walking without weapons animation | footstep sound fix.
+- Crouching without weapons animation | footstep sound fix.
+(.bikey updated)
+_________________________________________________________
+v0.5 : 18 NOV 2017
+- Changing stance from kneel to prone animation fix.
+- Changing weapon to launcher while kneel animation fix.
+- Switching to prone while running animations mismatch fix.
+- Switching to prone while sprinting animations mismatch fix.
+(.bikey updated)
+_________________________________________________________
+v0.4.1 : 15 NOV 2017
+- Prone (weapon) animations fix.
+(.bikey updated)
+_________________________________________________________
+v0.4 : 15 NOV 2017
+- Walking with main weapon animation adjusted and added.
+- Adjusted no weapon walking animations speed.
+- No weapons animations mismatch fixed.
+- Prone animations fix.
+(.bikey updated)
+_________________________________________________________
+v0.3 : 14 NOV 2017
+- Switch to prone while running with pistol animation speed adjustment.
+- Some binoculars animations fixed.
+- Weapon switching animations fixed.
+(.bikey updated)
+_________________________________________________________
+v0.2.1 : 13 NOV 2017
+- Walking with lowered pistol animation speed adjustment.
+(.bikey updated)
+_________________________________________________________
+v0.2 : 13 NOV 2017
+- All sitting animations fixed.
+- Lowered pistol crouch_in/out & prone_in/out animations mismatch fixed.
+- Proning forward with pistol animation speed adjustment.
+- Lowered main weapon crouch_in/out & prone_in/out animations mismatch fixed.
+- Animations config file was moved to "a2a_data.pbo".
+(.bikey updated)
+_________________________________________________________
+v0.1 : 12 NOV 2017
+- FIRST PUBLIC VERSION
