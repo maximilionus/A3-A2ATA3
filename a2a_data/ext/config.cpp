@@ -35554,10 +35554,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.02
 			};
 		};
-		class AmovPercMrunSrasWrflDf_ldst: AmovPercMrunSrasWrflDf
+		class AmovPercMrunSrasWrflDf_ldst: AmovPercMrunSrasWrflDf //AI Run Forward
 		{
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\run\low\rfl\amovpercmrunslowwrfldf.rtm";
+			limitGunMovement=0.1;
+		/* -- Original
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\run\ras\rfl\amovpercmrunsraswrfldf_ldst.rtm";
 			limitGunMovement=0.1;
+		*/
 		};
 		class AmovPercMrunSrasWrflDfl_ldst: AmovPercMrunSrasWrflDfl
 		{
@@ -50260,8 +50264,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			aimPrecision=8;
 			duty=1;
 			relSpeedMin=0.5;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\low\pst\amovpknlmsprslowwpstdf.rtm";
-			speed=1.5;
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\low\pst\amovpknlmrunslowwpstdf.rtm";
+			speed=0.83900; //1.5 -- original | 0.67733997 -- original for AmovPknlMrunSrasWpstDf
 			actions="PistolKneelEvasiveActionsF";
 			headBobStrength=0.21393;
 			ConnectTo[]={};
@@ -50284,7 +50288,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"Unconscious",
 				0.1
 			};
-			soundEdge[]={0,0.40000001,0.80000001};
+			//soundEdge[]={0,0.40000001,0.80000001}; -- original soundEdge
+			soundEdge[]={0.25,0.5,0.75,1};
 		};
 		class AmovPercMevaSlowWpstDf: AmovPercMevaSrasWpstDf
 		{
@@ -50344,8 +50349,13 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMevaSrasWpstDfl: AmovPknlMevaSrasWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\low\pst\amovpknlmsprslowwpstdfl.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\low\pst\amovpknlmrunslowwpstdfl.rtm";
+			//file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\low\pst\amovpknlmsprslowwpstdfl.rtm";  -- original 
 			actions="PistolKneelEvasiveActionsFL";
+			//---- Added
+			speed=0.83900;
+			soundEdge[]={0.25,0.5,0.75,1};
+			//----
 			InterpolateTo[]=
 			{
 				"AmovPknlMrunSlowWpstDfl",
@@ -50426,9 +50436,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMevaSrasWpstDfr: AmovPknlMevaSrasWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\low\pst\amovpknlmsprslowwpstdfr.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\low\pst\amovpknlmrunslowwpstdfr.rtm";
+			//file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\low\pst\amovpknlmsprslowwpstdfr.rtm"; -- original
 			actions="PistolKneelEvasiveActionsFR";
 			headBobStrength=0.20398;
+			//---- added
+			speed=0.83900;
+			soundEdge[]={0.25,0.5,0.75,1};
+			//----
 			InterpolateTo[]=
 			{
 				"AmovPknlMrunSlowWpstDfr",
