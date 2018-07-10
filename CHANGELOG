@@ -1,7 +1,11 @@
 //@A2ATA3 CHANGELOG : Last Update - 21 JUNE 2018.\\
+#### DONT FORGET TO CHANGE "LAST UPDATE" DATE AND PASTE THIS INTO "@\CHANGELOG.txt" && REMOVE THIS LINE TOO, LOL ####
 _________________________________________________________
 v0.X.X : XX XXXX 2018
-[EDIT] @\CHANGELOG.txt was restructured
+[FIX] Corrected footsteps sound source for [Stand > Walk > Pistol > Raised] animation.
+[EDIT] Speeded up a2's [Crouch > Run > Pistol > Lowered] animation and used it instead of a3's.
+[EDIT] [AI > Stand > Run > Lowered] was changed from special A3 animation to A2 anim.
+[EDIT] @\CHANGELOG.txt was restructured.
 _________________________________________________________
 v0.8.7 : 02 APR 2018
 [EDIT] New logo and icon for modification.

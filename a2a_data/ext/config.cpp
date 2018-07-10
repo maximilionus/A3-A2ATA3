@@ -38499,6 +38499,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			disableWeaponsLong=1;
 			weaponLowered=1;
 			enableOptics=0;
+			//---- NEW
+			soundEdge[]={0.25,0.5,0.75,1};
+			//----
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
