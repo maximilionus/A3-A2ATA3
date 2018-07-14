@@ -40567,7 +40567,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\low\pst\amovpknlmrunslowwpstdl.rtm";
 			speed=0.75;
 			actions="PistolKneelActionsRunL";
-			soundEdge[]={0.5,1};
+			soundEdge[]={0.25,0.5,0.75,1};
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
