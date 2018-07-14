@@ -35713,7 +35713,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			actions="CivilWlkActionsB";
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondb.rtm";
 			speed=0.33707899;
-			soundEdge[]={0.250000,0.500000,0.750000,1};
+			walkcycles=2;
+			soundEdge[]={0.25,0.5,0.75,1};
 			InterpolateTo[]=
 			{
 				"AmovPercMwlkSnonWnonDbl",
@@ -50715,12 +50716,13 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			visibleSize=0.60000002;
 			aimPrecision=8;
 			actions="CivilEvasiveKneelActions";
-			speed=1.875;
+			speed=0.9000;
 			canPullTrigger=0;
 			relSpeedMin=0.5;
 			duty=0.80000001;
+			soundEdge[]={0.25,0.5,0.75,1};
 			Walkcycles=2;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\non\non\amovpknlmevasnonwnondf.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondf.rtm";
 			ConnectTo[]=
 			{
 				"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon",
@@ -50748,8 +50750,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMevaSnonWnonDfl: AmovPknlMevaSnonWnonDf
 		{
-			speed=1.7647099;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\non\non\amovpknlmevasnonwnondfl.rtm";
+			speed=0.9000;
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondfl.rtm";
 			InterpolateTo[]=
 			{
 				"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon",
@@ -50772,8 +50774,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMevaSnonWnonDfr: AmovPknlMevaSnonWnonDf
 		{
-			speed=1.7647099;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\non\non\amovpknlmevasnonwnondfr.rtm";
+			speed=0.9000;
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondfr.rtm";
 			InterpolateTo[]=
 			{
 				"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon",
