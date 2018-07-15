@@ -63199,7 +63199,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			stamina=-1;
 			speed=1.54286;
 			duty=0.60000002;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\opt\bin\amovpercmsprsoptwbindf.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\non\non\amovpercmsprsnonwnondf.rtm";
 			actions="BinocStandActionsEvasiveF";
 			InterpolateTo[]=
 			{
@@ -63229,7 +63229,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			speed=1.54286;
 			actions="BinocStandActionsEvasiveFL";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\opt\bin\amovpercmsprsoptwbindfl.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\non\non\amovpercmsprsnonwnondfl.rtm";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSoptWbinDnon",
@@ -63255,7 +63255,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMevaSnonWbinDfr: AmovPercMevaSnonWbinDf
 		{
 			speed=1.54286;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\opt\bin\amovpercmsprsoptwbindfr.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\non\non\amovpercmsprsnonwnondfr.rtm";
 			actions="BinocStandActionsEvasiveFR";
 			InterpolateTo[]=
 			{
@@ -64372,9 +64372,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			aimPrecision=8;
 			stamina=-1;
-			speed=1.54286;
+			speed=0.9000;
 			duty=0.80000001;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\opt\bin\amovpknlmevasoptwbindf.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondf.rtm";
 			actions="BinocKneelActionsEvasiveF";
 			InterpolateTo[]=
 			{
@@ -64398,13 +64398,13 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.1
 			};
 			soundOverride="sprint";
-			soundEdge[]={0.5,1};
+			soundEdge[]={0.25,0.5,0.75,1};
 		};
 		class AmovPknlMevaSnonWbinDfl: AmovPknlMevaSnonWbinDf
 		{
-			speed=1.54286;
+			speed=0.9000;
 			actions="BinocKneelActionsEvasiveFL";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\opt\bin\amovpknlmevasoptwbindfl.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondfl.rtm";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSoptWbinDnon",
@@ -64429,8 +64429,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMevaSnonWbinDfr: AmovPknlMevaSnonWbinDf
 		{
-			speed=1.54286;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\opt\bin\amovpknlmevasoptwbindfr.rtm";
+			speed=0.9000;
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondfr.rtm";
 			actions="BinocKneelActionsEvasiveFR";
 			InterpolateTo[]=
 			{

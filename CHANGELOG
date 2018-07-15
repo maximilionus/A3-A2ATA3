@@ -6,6 +6,8 @@ v0.X.X : XX XXXX 2018
 [FIX] Corrected footsteps sound source for [Player > Pistol > Lowered > Crouch Left > Run] animation.
 [EDIT] Speeded up a2's [Player > Pistol > Lowered > Crouch > Run] animation and used it instead of a3's.
 [EDIT] Speeded up a2's [Player > None > Crouch > Run] animation and used it instead of a3's.
+[EDIT] Speeded up a2's [Player > None > Stand > Sprinting] animation and used it instead of a3's [Player > Binocular > Stand > Sprinting].
+[EDIT] Speeded up a2's [Player > None > Crouch > Sprinting] animation and used it instead of a3's [Player > Binocular > Crouch > Sprinting].
 [EDIT] [AI > Main Weapon > Lowered > Stand > Run] was changed from special A3 animation to A2 anim.
 [EDIT] @\CHANGELOG.txt was restructured.
 _________________________________________________________
