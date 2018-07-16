@@ -33228,7 +33228,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMwlkSlowWrflDr_ver2: AmovPercMwlkSlowWrflDf_ver2
 		{
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\wlk\low\rfl\amovpercmwlkslowwrfldr.rtm";
-			speed=0.435714;
+			speed=0.426316;
 			actions="RifleLowStandActionsWlkR";
 			InterpolateTo[]=
 			{
