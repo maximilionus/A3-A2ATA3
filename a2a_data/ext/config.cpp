@@ -35692,6 +35692,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			actions="CivilWlkActionsBL";
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondbl.rtm";
 			speed=0.33707899;
+			soundEdge[]={0.091836996,0.285714,0.42857099,0.60204101,0.74489802,0.94897997};
 			InterpolateTo[]=
 			{
 				"AmovPercMwlkSnonWnonDl",
@@ -35712,9 +35713,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			actions="CivilWlkActionsB";
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondb.rtm";
+			soundEdge[]={0.091836996,0.285714,0.42857099,0.60204101,0.74489802,0.94897997};
 			speed=0.33707899;
-			walkcycles=2;
-			soundEdge[]={0.25,0.5,0.75,1};
 			InterpolateTo[]=
 			{
 				"AmovPercMwlkSnonWnonDbl",
@@ -35736,6 +35736,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			actions="CivilWlkActionsBR";
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondbr.rtm";
 			speed=0.33707899;
+			soundEdge[]={0.091836996,0.285714,0.42857099,0.60204101,0.74489802,0.94897997};
 			InterpolateTo[]=
 			{
 				"AmovPercMwlkSnonWnonDb",

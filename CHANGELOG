@@ -4,6 +4,7 @@ _________________________________________________________
 v0.X.X : XX XXXX 2018
 [FIX] Corrected footsteps sound source for [Player > Pistol > Raised > Stand > Walk] animation.
 [FIX] Corrected footsteps sound source for [Player > Pistol > Lowered > Crouch Left > Run] animation.
+[FIX] Corrected footsteps sound source for [Player > None > Stand > Walk > Backward (+ Back-Left & Back-Right)] animation.
 [EDIT] Speeded up a2's [Player > Pistol > Lowered > Crouch > Run] animation and used it instead of a3's.
 [EDIT] Speeded up a2's [Player > None > Crouch > Run] animation and used it instead of a3's.
 [EDIT] Speeded up a2's [Player > None > Stand > Sprinting] animation and used it instead of a3's [Player > Binocular > Stand > Sprinting].
