@@ -63198,7 +63198,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			aimPrecision=7;
 			stamina=-1;
-			speed=1.54286;
+			speed=1.875;
 			duty=0.60000002;
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\non\non\amovpercmsprsnonwnondf.rtm";
 			actions="BinocStandActionsEvasiveF";
@@ -63228,7 +63228,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMevaSnonWbinDfl: AmovPercMevaSnonWbinDf
 		{
-			speed=1.54286;
+			speed=1.875;
 			actions="BinocStandActionsEvasiveFL";
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\non\non\amovpercmsprsnonwnondfl.rtm";
 			InterpolateTo[]=
@@ -63255,7 +63255,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMevaSnonWbinDfr: AmovPercMevaSnonWbinDf
 		{
-			speed=1.54286;
+			speed=1.875;
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\non\non\amovpercmsprsnonwnondfr.rtm";
 			actions="BinocStandActionsEvasiveFR";
 			InterpolateTo[]=
