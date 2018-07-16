@@ -33228,7 +33228,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMwlkSlowWrflDr_ver2: AmovPercMwlkSlowWrflDf_ver2
 		{
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\wlk\low\rfl\amovpercmwlkslowwrfldr.rtm";
-			speed=0.435714;
+			speed=0.426316;
 			actions="RifleLowStandActionsWlkR";
 			InterpolateTo[]=
 			{
@@ -35554,10 +35554,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.02
 			};
 		};
-		class AmovPercMrunSrasWrflDf_ldst: AmovPercMrunSrasWrflDf
+		class AmovPercMrunSrasWrflDf_ldst: AmovPercMrunSrasWrflDf //AI Run Forward
 		{
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\run\low\rfl\amovpercmrunslowwrfldf.rtm";
+			limitGunMovement=0.1;
+		/* -- Original
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\run\ras\rfl\amovpercmrunsraswrfldf_ldst.rtm";
 			limitGunMovement=0.1;
+		*/
 		};
 		class AmovPercMrunSrasWrflDfl_ldst: AmovPercMrunSrasWrflDfl
 		{
@@ -35688,6 +35692,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			actions="CivilWlkActionsBL";
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondbl.rtm";
 			speed=0.33707899;
+			soundEdge[]={0.091836996,0.285714,0.42857099,0.60204101,0.74489802,0.94897997};
 			InterpolateTo[]=
 			{
 				"AmovPercMwlkSnonWnonDl",
@@ -35708,8 +35713,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			actions="CivilWlkActionsB";
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondb.rtm";
+			soundEdge[]={0.091836996,0.285714,0.42857099,0.60204101,0.74489802,0.94897997};
 			speed=0.33707899;
-			soundEdge[]={0.250000,0.500000,0.750000,1};
 			InterpolateTo[]=
 			{
 				"AmovPercMwlkSnonWnonDbl",
@@ -35731,6 +35736,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			actions="CivilWlkActionsBR";
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\wlk\non\non\amovpercmwlksnonwnondbr.rtm";
 			speed=0.33707899;
+			soundEdge[]={0.091836996,0.285714,0.42857099,0.60204101,0.74489802,0.94897997};
 			InterpolateTo[]=
 			{
 				"AmovPercMwlkSnonWnonDb",
@@ -38495,6 +38501,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			disableWeaponsLong=1;
 			weaponLowered=1;
 			enableOptics=0;
+			//---- NEW
+			soundEdge[]={0.25,0.5,0.75,1};
+			//----
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSlowWpstDnon",
@@ -40560,7 +40569,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\low\pst\amovpknlmrunslowwpstdl.rtm";
 			speed=0.75;
 			actions="PistolKneelActionsRunL";
-			soundEdge[]={0.5,1};
+			soundEdge[]={0.25,0.5,0.75,1};
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSrasWpstDnon",
@@ -50260,8 +50269,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			aimPrecision=8;
 			duty=1;
 			relSpeedMin=0.5;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\low\pst\amovpknlmsprslowwpstdf.rtm";
-			speed=1.5;
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\low\pst\amovpknlmrunslowwpstdf.rtm";
+			speed=0.83900; //1.5 -- original | 0.67733997 -- original for AmovPknlMrunSrasWpstDf
 			actions="PistolKneelEvasiveActionsF";
 			headBobStrength=0.21393;
 			ConnectTo[]={};
@@ -50284,7 +50293,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				"Unconscious",
 				0.1
 			};
-			soundEdge[]={0,0.40000001,0.80000001};
+			//soundEdge[]={0,0.40000001,0.80000001}; -- original soundEdge
+			soundEdge[]={0.25,0.5,0.75,1};
 		};
 		class AmovPercMevaSlowWpstDf: AmovPercMevaSrasWpstDf
 		{
@@ -50344,8 +50354,13 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMevaSrasWpstDfl: AmovPknlMevaSrasWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\low\pst\amovpknlmsprslowwpstdfl.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\low\pst\amovpknlmrunslowwpstdfl.rtm";
+			//file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\low\pst\amovpknlmsprslowwpstdfl.rtm";  -- original 
 			actions="PistolKneelEvasiveActionsFL";
+			//---- Added
+			speed=0.83900;
+			soundEdge[]={0.25,0.5,0.75,1};
+			//----
 			InterpolateTo[]=
 			{
 				"AmovPknlMrunSlowWpstDfl",
@@ -50426,9 +50441,14 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMevaSrasWpstDfr: AmovPknlMevaSrasWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\low\pst\amovpknlmsprslowwpstdfr.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\low\pst\amovpknlmrunslowwpstdfr.rtm";
+			//file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\low\pst\amovpknlmsprslowwpstdfr.rtm"; -- original
 			actions="PistolKneelEvasiveActionsFR";
 			headBobStrength=0.20398;
+			//---- added
+			speed=0.83900;
+			soundEdge[]={0.25,0.5,0.75,1};
+			//----
 			InterpolateTo[]=
 			{
 				"AmovPknlMrunSlowWpstDfr",
@@ -50697,12 +50717,13 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			visibleSize=0.60000002;
 			aimPrecision=8;
 			actions="CivilEvasiveKneelActions";
-			speed=1.875;
+			speed=0.9000;
 			canPullTrigger=0;
 			relSpeedMin=0.5;
 			duty=0.80000001;
+			soundEdge[]={0.25,0.5,0.75,1};
 			Walkcycles=2;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\non\non\amovpknlmevasnonwnondf.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondf.rtm";
 			ConnectTo[]=
 			{
 				"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon",
@@ -50730,8 +50751,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMevaSnonWnonDfl: AmovPknlMevaSnonWnonDf
 		{
-			speed=1.7647099;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\non\non\amovpknlmevasnonwnondfl.rtm";
+			speed=0.9000;
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondfl.rtm";
 			InterpolateTo[]=
 			{
 				"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon",
@@ -50754,8 +50775,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMevaSnonWnonDfr: AmovPknlMevaSnonWnonDf
 		{
-			speed=1.7647099;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\non\non\amovpknlmevasnonwnondfr.rtm";
+			speed=0.9000;
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondfr.rtm";
 			InterpolateTo[]=
 			{
 				"AmovPercMsprSnonWnonDf_AmovPpneMstpSnonWnonDnon",
@@ -63177,9 +63198,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			aimPrecision=7;
 			stamina=-1;
-			speed=1.54286;
+			speed=1.875;
 			duty=0.60000002;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\opt\bin\amovpercmsprsoptwbindf.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\non\non\amovpercmsprsnonwnondf.rtm";
 			actions="BinocStandActionsEvasiveF";
 			InterpolateTo[]=
 			{
@@ -63207,9 +63228,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMevaSnonWbinDfl: AmovPercMevaSnonWbinDf
 		{
-			speed=1.54286;
+			speed=1.875;
 			actions="BinocStandActionsEvasiveFL";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\opt\bin\amovpercmsprsoptwbindfl.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\non\non\amovpercmsprsnonwnondfl.rtm";
 			InterpolateTo[]=
 			{
 				"AmovPercMstpSoptWbinDnon",
@@ -63234,8 +63255,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMevaSnonWbinDfr: AmovPercMevaSnonWbinDf
 		{
-			speed=1.54286;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\opt\bin\amovpercmsprsoptwbindfr.rtm";
+			speed=1.875;
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\non\non\amovpercmsprsnonwnondfr.rtm";
 			actions="BinocStandActionsEvasiveFR";
 			InterpolateTo[]=
 			{
@@ -64352,9 +64373,9 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			aimPrecision=8;
 			stamina=-1;
-			speed=1.54286;
+			speed=0.9000;
 			duty=0.80000001;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\opt\bin\amovpknlmevasoptwbindf.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondf.rtm";
 			actions="BinocKneelActionsEvasiveF";
 			InterpolateTo[]=
 			{
@@ -64378,13 +64399,13 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.1
 			};
 			soundOverride="sprint";
-			soundEdge[]={0.5,1};
+			soundEdge[]={0.25,0.5,0.75,1};
 		};
 		class AmovPknlMevaSnonWbinDfl: AmovPknlMevaSnonWbinDf
 		{
-			speed=1.54286;
+			speed=0.9000;
 			actions="BinocKneelActionsEvasiveFL";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\opt\bin\amovpknlmevasoptwbindfl.rtm";
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondfl.rtm";
 			InterpolateTo[]=
 			{
 				"AmovPknlMstpSoptWbinDnon",
@@ -64409,8 +64430,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMevaSnonWbinDfr: AmovPknlMevaSnonWbinDf
 		{
-			speed=1.54286;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\spr\opt\bin\amovpknlmevasoptwbindfr.rtm";
+			speed=0.9000;
+			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\run\non\non\amovpknlmrunsnonwnondfr.rtm";
 			actions="BinocKneelActionsEvasiveFR";
 			InterpolateTo[]=
 			{

@@ -1,7 +1,18 @@
-//@A2ATA3 CHANGELOG : Last Update - 21 JUNE 2018.\\
+//@A2ATA3 CHANGELOG : Last Update - 16 JULY 2018.\\
+
 _________________________________________________________
-v0.X.X : XX XXXX 2018
-[EDIT] @\CHANGELOG.txt was restructured
+v0.9 : 16 JULY 2018
+[FIX] Corrected footsteps sound source for [Player > Pistol > Raised > Stand > Walk] animation.
+[FIX] Corrected footsteps sound source for [Player > Pistol > Lowered > Crouch Left > Run] animation.
+[FIX] Corrected footsteps sound source for [Player > None > Stand > Walk > Backward (+ Back-Left & Back-Right)] animation.
+[EDIT] Speeded up a2's [Player > Pistol > Lowered > Crouch > Run] animation and used it instead of a3's.
+[EDIT] Speeded up a2's [Player > None > Crouch > Run] animation and used it instead of a3's.
+[EDIT] Speeded up a2's [Player > None > Stand > Sprinting] animation and used it instead of a3's [Player > Binocular > Stand > Sprinting].
+[EDIT] Speeded up a2's [Player > None > Crouch > Sprinting] animation and used it instead of a3's [Player > Binocular > Crouch > Sprinting].
+[EDIT] [AI > Main Weapon > Lowered > Stand > Run] was changed from special A3 animation to A2 anim.
+[EDIT] @\CHANGELOG.txt was restructured.
+
+-- .bikey updated
 _________________________________________________________
 v0.8.7 : 02 APR 2018
 [EDIT] New logo and icon for modification.
@@ -12,6 +23,8 @@ v0.8.7 : 02 APR 2018
 [FIX] Switching from 2nd to 3rd weapon - speed and interpolation -- pos: kneel.
 [FIX] Switching from 1st weapon to binoculars - speed and interpolation -- pos: prone, kneel.
 [FIX] Running with binoculars -- wrong footsteps sound source.
+
+-- .bikey updated
 _________________________________________________________
 v0.8.5 : 11 MAR 2018
 [FIX] Walking forward-right with 3rd weapon animation speed.
@@ -23,6 +36,7 @@ v0.8.5 : 11 MAR 2018
 [FIX] Walking backwards with 2nd weapon animation speed
 [FIX] 2nd weapon footsteps sound source.
 [REMOVED] Tactical running forward-right while crouching with 3rd weapon animation.
+-- .bikey updated
 _________________________________________________________
 v0.8.1_hotfix : 17 FEB 2018
 [REMOVED] A2 Fatigue system testing was stopped due many issues and a2a_fatigue was removed for some time.
