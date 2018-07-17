@@ -1,5 +1,8 @@
-//@A2ATA3 CHANGELOG : Last Update - 16 JULY 2018.\\
+//@A2ATA3 CHANGELOG : Last Update - 17 JULY 2018.\\
 
+_________________________________________________________
+v0.9A : 17 JULY 2018
+[FIX] $PBOPREFIX$ : displaying .pbo version was updated to 0.9A.
 _________________________________________________________
 v0.9 : 16 JULY 2018
 [FIX] Corrected footsteps sound source for [Player > Pistol > Raised > Stand > Walk] animation.
