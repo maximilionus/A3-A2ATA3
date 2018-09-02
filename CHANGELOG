@@ -1,8 +1,10 @@
-//@A2ATA3 CHANGELOG : Last Update - 17 JULY 2018.\\
+//@A2ATA3 CHANGELOG : Last Update - 2 SEPT 2018.\\
 
 _________________________________________________________
-v0.9.1 : XX XXXX XXXX
-[EDIT] Removed useless for moving animations "CfgGesturesMale" class from [a2ata3\a2a_data\ext\config.cpp].
+v0.9.1 : 02 SEPT 2018
+[FIX] Fixed problem with animation interpolation for rolling actions.
+[REMOVED] Removed useless for moving animations "CfgGesturesMale" class from [a2ata3\a2a_data\ext\config.cpp].
+[REMOVED] Removed [player > ALL > rolling(Left + Right)] animations.
 _________________________________________________________
 v0.9A : 17 JULY 2018
 [FIX] $PBOPREFIX$ : displaying .pbo version was updated to 0.9A.

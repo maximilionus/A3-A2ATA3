@@ -30573,128 +30573,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.1
 			};
 		};
-		class AmovPpneMstpSrasWpstDnon: AmovPercMstpSrasWpstDnon
-		{
-			variantsPlayer[]=
-			{
-				"AidlPpneMstpSrasWpstDnon_G01_player",
-				0.333,
-				"AidlPpneMstpSrasWpstDnon_G02_player",
-				0.333,
-				"AidlPpneMstpSrasWpstDnon_G03_player",
-				0.33399999
-			};
-			actions="PistolProneActions";
-			duty=-1;
-			file="a3\anims_f\data\Anim\sdr\mov\pne\stp\ras\pst\amovppnemstpsraswpstdnon.rtm";
-			visibleSize=0.15000001;
-			speed=0.8;
-			onLandBeg=1;
-			onLandEnd=1;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\Ppne.p3d";
-			leaningFactorBeg=0;
-			leaningFactorEnd=0;
-			InterpolationSpeed=2.5;
-			soundOverride="crawl";
-			soundEdge[]={0.2,0.69999999};
-			aimprecision=1.25;
-			ConnectTo[]=
-			{
-				"AmovPpneMstpSrasWpstDnon_turnL",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_turnR",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon",
-				0.02,
-				"PistolMagazineReloadProne",
-				0.1,
-				"AmovPpneMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPpneMstpSrasWrflDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AwopPpneMstpSoptWbinDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPpneMstpSnonWnonDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPpneMevaSlowWpstDl",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPpneMevaSlowWpstDr",
-				0.02,
-				"AwopPpneMstpSgthWpstDnon_Part1",
-				0.1,
-				"AidlPpneMstpSrasWpstDnon_AI",
-				0.1,
-				"AmovPpneMstpSrasWpstDnon_healed",
-				0.02,
-				"AmovPpneMstpSnonWpstDnon_injured",
-				0.1
-			};
-			InterpolateTo[]=
-			{
-				"AmovPpneMstpSrasWpstDnon_turnL",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_turnR",
-				0.02,
-				"AidlPpneMstpSrasWpstDnon_AI",
-				0.1,
-				"AinvPpneMstpSlayWpstDnon_medicIn",
-				0.02,
-				"AinvPpneMstpSlayWpstDnon_medicOtherIn",
-				0.02,
-				"AmovPpneMrunSlowWpstDf",
-				0.02,
-				"AmovPpneMrunSlowWpstDfl",
-				0.02,
-				"AmovPpneMrunSlowWpstDl",
-				0.02,
-				"AmovPpneMrunSlowWpstDbl",
-				0.02,
-				"AmovPpneMrunSlowWpstDb",
-				0.02,
-				"AmovPpneMrunSlowWpstDbr",
-				0.02,
-				"AmovPpneMrunSlowWpstDr",
-				0.02,
-				"AmovPpneMrunSlowWpstDfr",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPercMsprSlowWpstDf",
-				0.0099999998,
-				"Unconscious",
-				0.0099999998,
-				"AmovPpneMstpSrasWpstDnon_relax",
-				0.1,
-				"AmovPpneMstpSrasWpstDnon_AadjPpneMstpSrasWpstDup",
-				0.0099999998,
-				"AmovPpneMstpSrasWpstDnon_AadjPpneMstpSrasWpstDdown",
-				0.0099999998,
-				"AmovPpneMstpSrasWpstDnon_AadjPpneMstpSrasWpstDleft",
-				0.0099999998,
-				"AmovPpneMstpSrasWpstDnon_AadjPpneMstpSrasWpstDright",
-				0.0099999998,
-				"AmovPpneMstpSrasWpstDnon_AmovPercMstpSrasWpstDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AmovPknlMstpSrasWpstDnon",
-				0.02,
-				"PistolReloadProne",
-				0.02,
-				"PistolHeavy02ReloadProne",
-				0.02,
-				"PistolReloadProneFlaregun",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AinvPpneMstpSrasWpstDnon",
-				0.02,
-				"AmovPpneMstpSrasWpstDnon_AinvPpneMstpSrasWpstDnon_Putdown",
-				0.02,
-				"AwopPpneMstpSgthWpstDnon_Fast_Start",
-				0.02,
-				"AfalPpneMstpSrasWpstDnon",
-				0.025,
-				"Campaign_Base",
-				0.5
-			};
-		};
+		class AmovPpneMstpSrasWpstDnon;
 		class AidlPpneMstpSrasWpstDnon_G0S: AmovPpneMstpSrasWpstDnon
 		{
 			variantsPlayer[]={};
@@ -50194,7 +50073,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			stamina=-1;
 			variantsPlayer[]={};
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\pne\stp\ras\rfl\amovppnemstpsraswrfldnon_amovppnemevaslowwrfldl.rtm";
+			file="a3\anims_f\data\Anim\sdr\mov\pne\stp\ras\rfl\amovppnemstpsraswrfldnon_amovppnemevaslowwrfldl.rtm";
 			speed=1.1;
 			duty=3;
 			soundEnabled=1;
@@ -50222,7 +50101,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPpneMstpSrasWrflDnon_AmovPpneMevaSlowWrflDr: AmovPpneMstpSrasWrflDnon_AmovPpneMevaSlowWrflDl
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\pne\stp\ras\rfl\amovppnemstpsraswrfldnon_amovppnemevaslowwrfldr.rtm";
+			file="a3\anims_f\data\Anim\sdr\mov\pne\stp\ras\rfl\amovppnemstpsraswrfldnon_amovppnemevaslowwrfldr.rtm";
 			speed=1.2;
 		};
 		class AmovPercMevaSrasWpstDf: SprintCivilBaseDf
@@ -50602,37 +50481,10 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.02
 			};
 		};
-		class AmovPpneMstpSrasWpstDnon_AmovPpneMevaSlowWpstDl: AmovPpneMstpSrasWpstDnon
-		{
-			aimPrecision=4;
-			stamina=-1;
-			variantsPlayer[]={};
-			variantsAI[]={};
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\pne\stp\ras\pst\amovppnemstpsraswpstdnon_amovppnemevaslowwpstdl.rtm";
-			speed=1.02;
-			duty=2.5;
-			soundEnabled=1;
-			soundOverride="roll";
-			soundEdge[]={0.0099999998};
-			canBlendStep=0;
-			interpolationRestart=1;
-			enableOptics=0;
-			enableDirectControl=0;
-			headBobStrength=-1;
-			ConnectTo[]=
-			{
-				"AmovPpneMstpSrasWpstDnon",
-				0.02
-			};
-			InterpolateTo[]=
-			{
-				"Unconscious",
-				0.1
-			};
-		};
+		class AmovPpneMstpSrasWpstDnon_AmovPpneMevaSlowWpstDl;
 		class AmovPpneMstpSrasWpstDnon_AmovPpneMevaSlowWpstDr: AmovPpneMstpSrasWpstDnon_AmovPpneMevaSlowWpstDl
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\pne\stp\ras\pst\amovppnemstpsraswpstdnon_amovppnemevaslowwpstdr.rtm";
+			file="a3\anims_f\data\Anim\sdr\mov\pne\stp\ras\pst\amovppnemstpsraswpstdnon_amovppnemevaslowwpstdr.rtm";
 		};
 		class AmovPercMevaSnonWnonDf: SprintCivilBaseDf
 		{
@@ -50797,54 +50649,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.1
 			};
 		};
-		class AmovPpneMstpSnonWnonDnon_AmovPpneMevaSnonWnonDl: AidlPpneMstpSnonWnonDnon_G0S
-		{
-			stamina=-1;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\pne\stp\non\non\amovppnemstpsnonwnondnon_amovppnemevasnonwnondl.rtm";
-			speed=0.94999999;
-			duty=2;
-			canBlendStep=0;
-			enableOptics=0;
-			enableDirectControl=0;
-			headBobStrength=-1;
-			soundEnabled=1;
-			soundOverride="roll_unarmed";
-			soundEdge[]={0.0099999998};
-			ConnectTo[]=
-			{
-				"AmovPpneMstpSnonWnonDnon",
-				0.02
-			};
-			InterpolateTo[]=
-			{
-				"Unconscious",
-				0.1
-			};
-		};
-		class AmovPpneMstpSnonWnonDnon_AmovPpneMevaSnonWnonDr: AidlPpneMstpSnonWnonDnon_G0S
-		{
-			stamina=-1;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\pne\stp\non\non\amovppnemstpsnonwnondnon_amovppnemevasnonwnondr.rtm";
-			speed=0.94999999;
-			duty=2;
-			canBlendStep=0;
-			enableOptics=0;
-			enableDirectControl=0;
-			headBobStrength=-1;
-			soundEnabled=1;
-			soundOverride="roll_unarmed";
-			soundEdge[]={0.0099999998};
-			ConnectTo[]=
-			{
-				"AmovPpneMstpSnonWnonDnon",
-				0.02
-			};
-			InterpolateTo[]=
-			{
-				"Unconscious",
-				0.1
-			};
-		};
+		class AmovPpneMstpSnonWnonDnon_AmovPpneMevaSnonWnonDl;
+		class AmovPpneMstpSnonWnonDnon_AmovPpneMevaSnonWnonDr;
 		class CutSceneAnimationBase: AmovPercMstpSnonWnonDnon
 		{
 			affectedByFatigue=0;
