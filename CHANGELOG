@@ -1,5 +1,8 @@
-//@A2ATA3 CHANGELOG : Last Update - 2 SEPT 2018.\\
+//@A2ATA3 CHANGELOG : Last Update - 13 FEB 2019.\\
 
+_________________________________________________________
+v0.9.X : XX XX 2019
+[FIX] Fixed animation freeze when player trying to sprint while aiming in [Player > Main Weapon > Raised (Aiming) > Stand > Sprint].
 _________________________________________________________
 v0.9.1 : 02 SEPT 2018
 [FIX] Fixed problem with animation interpolation for rolling actions.
