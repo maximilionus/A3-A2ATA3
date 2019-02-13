@@ -1,17 +1,3 @@
-class CfgPatches
-{
-	class a2a_anims_config
-	{
-		addonRootClass = "m_a2ata3_data";
-		name = "a2ata3_anims";
-		author = "MAXIMILI";
-		requiredVersion = 0.1; 
-		requiredAddons[] = {"A3_Anims_F"};
-		units[] = {};
-		weapons[] = {};
-	};
-};
-
 class CfgMovesBasic
 {
 	skeletonName="";
@@ -49643,8 +49629,6 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\spr\low\rfl\amovpercmsprslowwrfldfr.rtm";
 			actions="RifleStandEvasiveActionsFR";
-			aimPrecision=4;
-			weaponLowered=1;
 			ConnectTo[]={};
 			InterpolateTo[]=
 			{
