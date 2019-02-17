@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Project name="a2ata3">
-	<Package name="Localization">
-		<Key ID="STR_a2ata3_overview">
-			<English>ArmA2 Animations To ArmA3 (A2ATA3) - modification for ArmA3 that change the most part of movement animations in A3 to A2 animations.</English>
-			<Russian>ArmA2 Animations To ArmA3 (A2ATA3) - модификация для ArmA3 изменяющая большую часть анимаций движения в A3 на анимации из A2.</Russian>
-		</Key>
-	</Package>
-</Project>
