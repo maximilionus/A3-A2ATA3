@@ -1,8 +1,14 @@
-//@A2ATA3 CHANGELOG : Last Update - 13 FEB 2019.\\
+//@A2ATA3 CHANGELOG : Last Update - 17 FEB 2019.\\
 
 _________________________________________________________
-v0.9.X : XX XX 2019
+v0.9.2 : 17 FEB 2019
+[NEW] .bikey updated to v3
 [FIX] Fixed animation freeze when player trying to sprint while aiming in [Player > Main Weapon > Raised (Aiming) > Stand > Sprint].
+[EDIT] File structure reworked.
+[REMOVED] Removed useless classes from 'A2ATA3\a2a_data\anims_cfg.hpp'.
+[REMOVED] Removed 'tactical' animations from 'A2ATA3\a2a_anims\Anim'.
+
+-- .bikey updated
 _________________________________________________________
 v0.9.1 : 02 SEPT 2018
 [FIX] Fixed problem with animation interpolation for rolling actions.
