@@ -22759,49 +22759,8 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				0.2
 			};
 		};
-		class Crew: Default
-		{
-			actions="CargoActions";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\sit\stp\non\non\amovpsitmstpsnonwnondnon.rtm";
-			speed=1e+010;
-			soundEnabled=0;
-			collisionShape="A3\anims_f\Data\Geom\Sdr\geom_empty.p3d";
-			useIdles=0;
-			canPullTrigger=0;
-			leaning="crewShake";
-			mask="empty";
-			blockMobileSwitching=1;
-			rightHandIKCurve[]={1};
-			leftHandIKCurve[]={1};
-			rightLegIKCurve[]={1};
-			leftLegIKCurve[]={1};
-			InterpolateTo[]=
-			{
-				"Unconscious",
-				0.1
-			};
-		};
-		class BasicDriver: Default
-		{
-			actions="CargoActions";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\sit\stp\non\non\amovpsitmstpsnonwnondnon_basicgunner.rtm";
-			speed=1e+010;
-			soundEnabled=0;
-			interpolationSpeed=1;
-			canPullTrigger=0;
-			ConnectTo[]=
-			{
-				"BasicDriverDying",
-				1
-			};
-			InterpolateTo[]=
-			{
-				"BasicDriverDying",
-				0.1,
-				"Unconscious",
-				0.1
-			};
-		};
+		class Crew;
+		class BasicDriver;
 		class BasicDriverDying: DefaultDie
 		{
 			file="a3\anims_f\data\anim\sdr\dth\pne\stp\ras\rfl\adthppnemstpsraswrfldnon_1.rtm";
@@ -22831,27 +22790,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			};
 			InterpolateTo[]={};
 		};
-		class BasicDriverOut: Default
-		{
-			actions="CargoActions";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\sit\stp\non\non\amovpsitmstpsnonwnondnon_basicgunner.rtm";
-			speed=1e+010;
-			soundEnabled=0;
-			interpolationSpeed=1;
-			canPullTrigger=0;
-			ConnectTo[]=
-			{
-				"BasicDriverOutDying",
-				1
-			};
-			InterpolateTo[]=
-			{
-				"BasicDriverOutDying",
-				0.1,
-				"Unconscious",
-				0.1
-			};
-		};
+		class BasicDriverOut;
 		class BasicDriverOutDying: DefaultDie
 		{
 			file="a3\anims_f\data\anim\sdr\dth\pne\stp\ras\rfl\adthppnemstpsraswrfldnon_1.rtm";
@@ -22896,20 +22835,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 				1
 			};
 		};
-		class BasicSittingGunner: Crew
-		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\sit\stp\non\non\amovpsitmstpsnonwnondnon_basicgunner.rtm";
-			ConnectTo[]=
-			{
-				"BasicSittingGunner_Dead",
-				1
-			};
-			InterpolateTo[]=
-			{
-				"BasicSittingGunner_Dead",
-				0.1
-			};
-		};
+		class BasicSittingGunner;
 		class SprintBaseDf: StandBase
 		{
 			stamina=-0.8; //Sprint Stamina Changed
@@ -29893,7 +29819,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			stamina=-0.1;
 			duty=0.2;
 			speed=0.75;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdf.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdf.rtm";
 			headBobStrength=0.124378;
 			actions="PistolLowKneelActionsTacF";
 			InterpolateTo[]=
@@ -29923,7 +29849,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSlowWpstDfl: AmovPknlMtacSlowWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdfl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdfl.rtm";
 			actions="PistolLowKneelActionsTacFL";
 			InterpolateTo[]=
 			{
@@ -29952,7 +29878,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMtacSlowWpstDl: AmovPknlMtacSlowWpstDf
 		{
 			speed=0.779221;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdl.rtm";
 			actions="PistolLowKneelActionsTacL";
 			InterpolateTo[]=
 			{
@@ -29977,7 +29903,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMtacSlowWpstDb: AmovPknlMtacSlowWpstDf
 		{
 			speed=0.81081098;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdb.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdb.rtm";
 			actions="PistolLowKneelActionsTacB";
 			InterpolateTo[]=
 			{
@@ -30001,7 +29927,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSlowWpstDbl: AmovPknlMtacSlowWpstDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdbl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdbl.rtm";
 			actions="PistolLowKneelActionsTacBL";
 			InterpolateTo[]=
 			{
@@ -30025,7 +29951,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSlowWpstDbr: AmovPknlMtacSlowWpstDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdbr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdbr.rtm";
 			actions="PistolLowKneelActionsTacBR";
 			InterpolateTo[]=
 			{
@@ -30049,7 +29975,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSlowWpstDr: AmovPknlMtacSlowWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdr.rtm";
 			actions="PistolLowKneelActionsTacR";
 			InterpolateTo[]=
 			{
@@ -30073,7 +29999,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSlowWpstDfr: AmovPknlMtacSlowWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdfr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\pst\amovpknlmtacslowwpstdfr.rtm";
 			actions="PistolLowKneelActionsTacFR";
 			InterpolateTo[]=
 			{
@@ -33998,7 +33924,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			duty=0.5;
 			soundOverride="Tactical";
 			aimPrecision=4;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldf.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldf.rtm";
 			speed=0.78571397;
 			headBobStrength=0.17412899;
 			actions="RifleStandActionsTacF";
@@ -34051,7 +33977,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWrflDfl: AmovPercMtacSrasWrflDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldfl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldfl.rtm";
 			actions="RifleStandActionsTacFL";
 			InterpolateTo[]=
 			{
@@ -34102,7 +34028,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSrasWrflDl: AmovPercMtacSrasWrflDf
 		{
 			speed=0.76156402;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldl.rtm";
 			headBobStrength=0.164179;
 			actions="RifleStandActionsTacL";
 			InterpolateTo[]=
@@ -34146,7 +34072,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSrasWrflDb: AmovPercMtacSrasWrflDf
 		{
 			speed=0.72290301;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldb.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldb.rtm";
 			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_Db.p3d";
 			actions="RifleStandActionsTacB";
 			InterpolateTo[]=
@@ -34189,7 +34115,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWrflDbl: AmovPercMtacSrasWrflDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldbl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldbl.rtm";
 			actions="RifleStandActionsTacBL";
 			InterpolateTo[]=
 			{
@@ -34231,7 +34157,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWrflDbr: AmovPercMtacSrasWrflDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldbr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldbr.rtm";
 			actions="RifleStandActionsTacBR";
 			InterpolateTo[]=
 			{
@@ -34274,7 +34200,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSrasWrflDr: AmovPercMtacSrasWrflDf
 		{
 			speed=0.68723202;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldr.rtm";
 			actions="RifleStandActionsTacR";
 			InterpolateTo[]=
 			{
@@ -34316,7 +34242,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWrflDfr: AmovPercMtacSrasWrflDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldfr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldfr.rtm";
 			headBobStrength=0.144279;
 			actions="RifleStandActionsTacFR";
 			SoundEdge[]={0.18181799,0.43181801,0.68181801,0.93181801};
@@ -34366,7 +34292,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			stamina=-0.1;
 			duty=0.15000001;
 			speed=0.64864999;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldf_ver2.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldf_ver2.rtm";
 			interpolationSpeed=3;
 			actions="RifleLowStandActionsTacF";
 			SoundEdge[]={0.18181799,0.43181801,0.68181801,0.93181801};
@@ -34409,7 +34335,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			stamina=-0.1;
 			duty=0.15000001;
 			speed=0.64864999;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldfl_ver2.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldfl_ver2.rtm";
 			interpolationSpeed=3;
 			actions="RifleLowStandActionsTacFL";
 			SoundEdge[]={0.18181799,0.43181801,0.68181801,0.93181801};
@@ -34452,7 +34378,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSlowWrflDb_ver2: AmovPercMtacSlowWrflDf_ver2
 		{
 			speed=0.39804301;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldb_ver2.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldb_ver2.rtm";
 			actions="RifleLowStandActionsTacB";
 			SoundEdge[]={0.123077,0.30769199,0.47692299,0.63076901,0.80000001,0.96923101};
 			InterpolateTo[]=
@@ -34488,7 +34414,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSlowWrflDbl_ver2: AmovPercMtacSlowWrflDb_ver2
 		{
 			speed=0.39804301;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldbl_ver2.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldbl_ver2.rtm";
 			actions="RifleLowStandActionsTacBL";
 			InterpolateTo[]=
 			{
@@ -34523,7 +34449,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSlowWrflDbr_ver2: AmovPercMtacSlowWrflDb_ver2
 		{
 			speed=0.39804301;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldbr_ver2.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldbr_ver2.rtm";
 			actions="RifleLowStandActionsTacBR";
 			InterpolateTo[]=
 			{
@@ -34558,7 +34484,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSlowWrflDr_ver2: AmovPercMtacSlowWrflDf_ver2
 		{
 			speed=0.70749497;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldr_ver2.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldr_ver2.rtm";
 			actions="RifleLowStandActionsTacR";
 			InterpolateTo[]=
 			{
@@ -34593,7 +34519,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSlowWrflDl_ver2: AmovPercMtacSlowWrflDf_ver2
 		{
 			speed=1.236369;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldl_ver2.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldl_ver2.rtm";
 			actions="RifleLowStandActionsTacL";
 			SoundEdge[]={0.285714,0.76190501};
 			InterpolateTo[]=
@@ -34628,7 +34554,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSlowWrflDfr_ver2: AmovPercMtacSlowWrflDf_ver2
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldfr_ver2.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldfr_ver2.rtm";
 			actions="RifleLowStandActionsTacFR";
 			InterpolateTo[]=
 			{
@@ -34670,49 +34596,49 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			speed=1.55;
 			leftHandIKCurve=0;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldf.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldf.rtm";
 		};
 		class AmovPercMtacSlowWrflDfl: AmovPercMtacSlowWrflDfl_ver2
 		{
 			speed=1.55;
 			leftHandIKCurve=0;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldfl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldfl.rtm";
 		};
 		class AmovPercMtacSlowWrflDfr: AmovPercMtacSlowWrflDfr_ver2
 		{
 			speed=1.5;
 			leftHandIKCurve=0;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldfr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldfr.rtm";
 		};
 		class AmovPercMtacSlowWrflDl: AmovPercMtacSlowWrflDl_ver2
 		{
 			speed=1.5;
 			leftHandIKCurve=0;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldl.rtm";
 		};
 		class AmovPercMtacSlowWrflDr: AmovPercMtacSlowWrflDr_ver2
 		{
 			speed=1.51429;
 			leftHandIKCurve=0;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldr.rtm";
 		};
 		class AmovPercMtacSlowWrflDb: AmovPercMtacSlowWrflDb_ver2
 		{
 			speed=1.57895;
 			leftHandIKCurve=0;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldb.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldb.rtm";
 		};
 		class AmovPercMtacSlowWrflDbl: AmovPercMtacSlowWrflDbl_ver2
 		{
 			speed=1.57895;
 			leftHandIKCurve=0;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldbl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldbl.rtm";
 		};
 		class AmovPercMtacSlowWrflDbr: AmovPercMtacSlowWrflDbr_ver2
 		{
 			speed=1.57895;
 			leftHandIKCurve=0;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldbr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\rfl\amovpercmtacslowwrfldbr.rtm";
 		};
 		class AmovPercMwlkSlowWrflDf: AmovPercMwlkSlowWrflDf_ver2
 		{
@@ -36428,7 +36354,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitgunmovement=0.80000001;
 			speed=1.45;
 			actions="RifleKneelLowActionsTacF";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldf.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldf.rtm";
 			camShakeFire=1.15;
 			aimPrecision=2;
 			duty=0.25;
@@ -36468,7 +36394,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitgunmovement=0.80000001;
 			speed=1.45;
 			actions="RifleKneelLowActionsTacFL";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldfl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldfl.rtm";
 			camShakeFire=1.15;
 			aimPrecision=2;
 			duty=0.2;
@@ -36508,7 +36434,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitgunmovement=0.80000001;
 			speed=1.6;
 			actions="RifleKneelLowActionsTacL";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldl.rtm";
 			camShakeFire=1.15;
 			aimPrecision=2;
 			duty=0.2;
@@ -36546,7 +36472,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitgunmovement=0.80000001;
 			speed=1.6;
 			actions="RifleKneelLowActionsTacBL";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldbl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldbl.rtm";
 			camShakeFire=1.15;
 			aimPrecision=2;
 			duty=0.2;
@@ -36584,7 +36510,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitgunmovement=0.80000001;
 			speed=1.6;
 			actions="RifleKneelLowActionsTacB";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldb.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldb.rtm";
 			camShakeFire=1.15;
 			aimPrecision=2;
 			duty=0.2;
@@ -36622,7 +36548,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitgunmovement=0.80000001;
 			speed=1.6;
 			actions="RifleKneelLowActionsTacBR";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldbr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldbr.rtm";
 			camShakeFire=1.15;
 			aimPrecision=2;
 			duty=0.2;
@@ -36658,7 +36584,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitgunmovement=0.80000001;
 			speed=1.71429;
 			actions="RifleKneelLowActionsTacR";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldr.rtm";
 			camShakeFire=1.15;
 			aimPrecision=2;
 			duty=0.2;
@@ -36696,7 +36622,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitgunmovement=0.80000001;
 			speed=1.75;
 			actions="RifleKneelLowActionsTacFR";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldfr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\low\rfl\amovpknlmtacslowwrfldfr.rtm";
 			camShakeFire=1.15;
 			aimPrecision=2;
 			duty=0.2;
@@ -37751,7 +37677,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			limitgunmovement=0.80000001;
 			actions="RifleKneelActionsTacF";
 			speed=0.55000001;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldf.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldf.rtm";
 			camShakeFire=1.15;
 			aimPrecision=5;
 			interpolationSpeed=4;
@@ -37799,7 +37725,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMtacSrasWrflDfl: AmovPknlMtacSrasWrflDf
 		{
 			actions="RifleKneelActionsTacFL";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldfl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldfl.rtm";
 			InterpolateTo[]=
 			{
 				"AmovPknlMtacSrasWrflDl",
@@ -37840,7 +37766,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			speed=0.61643797;
 			actions="RifleKneelActionsTacL";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldl.rtm";
 			InterpolateTo[]=
 			{
 				"AmovPknlMtacSrasWrflDbl",
@@ -37879,7 +37805,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		{
 			speed=0.585738;
 			actions="RifleKneelActionsTacB";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldb.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldb.rtm";
 			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_Db.p3d";
 			InterpolateTo[]=
 			{
@@ -37920,7 +37846,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMtacSrasWrflDbl: AmovPknlMtacSrasWrflDb
 		{
 			actions="RifleKneelActionsTacBL";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldbl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldbl.rtm";
 			InterpolateTo[]=
 			{
 				"AmovPknlMtacSrasWrflDl",
@@ -37958,7 +37884,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMtacSrasWrflDbr: AmovPknlMtacSrasWrflDb
 		{
 			actions="RifleKneelActionsTacBr";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldbr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldbr.rtm";
 			InterpolateTo[]=
 			{
 				"AmovPknlMtacSrasWrflDb",
@@ -37996,7 +37922,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMtacSrasWrflDr: AmovPknlMtacSrasWrflDf
 		{
 			speed=0.62532598;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldr.rtm";
 			actions="RifleKneelActionsTacR";
 			InterpolateTo[]=
 			{
@@ -38035,7 +37961,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMtacSrasWrflDfr: AmovPknlMtacSrasWrflDf
 		{
 			speed=0.54619998;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldfr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\rfl\amovpknlmtacsraswrfldfr.rtm";
 			actions="RifleKneelActionsTacFR";
 			InterpolateTo[]=
 			{
@@ -38928,7 +38854,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			stamina=-0.1;
 			duty=0;
 			speed=0.60000002;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdf.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdf.rtm";
 			headBobStrength=0.124378;
 			actions="PistolLowStandActionsTacF";
 			InterpolateTo[]=
@@ -38958,7 +38884,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSlowWpstDfl: AmovPercMtacSlowWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdfl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdfl.rtm";
 			actions="PistolLowStandActionsTacFL";
 			InterpolateTo[]=
 			{
@@ -38987,7 +38913,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSlowWpstDl: AmovPercMtacSlowWpstDf
 		{
 			speed=0.779221;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdl.rtm";
 			actions="PistolLowStandActionsTacL";
 			InterpolateTo[]=
 			{
@@ -39012,7 +38938,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSlowWpstDb: AmovPercMtacSlowWpstDf
 		{
 			speed=0.61081098;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdb.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdb.rtm";
 			actions="PistolLowStandActionsTacB";
 			InterpolateTo[]=
 			{
@@ -39036,7 +38962,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSlowWpstDbl: AmovPercMtacSlowWpstDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdbl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdbl.rtm";
 			actions="PistolLowStandActionsTacBL";
 			InterpolateTo[]=
 			{
@@ -39060,7 +38986,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSlowWpstDbr: AmovPercMtacSlowWpstDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdbr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdbr.rtm";
 			actions="PistolLowStandActionsTacBR";
 			InterpolateTo[]=
 			{
@@ -39084,7 +39010,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSlowWpstDr: AmovPercMtacSlowWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdr.rtm";
 			actions="PistolLowStandActionsTacR";
 			InterpolateTo[]=
 			{
@@ -39108,7 +39034,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSlowWpstDfr: AmovPercMtacSlowWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdfr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\low\pst\amovpercmtacslowwpstdfr.rtm";
 			actions="PistolLowStandActionsTacFR";
 			InterpolateTo[]=
 			{
@@ -39139,7 +39065,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			stamina=-0.1;
 			duty=0.2;
 			speed=0.85059202;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdf.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdf.rtm";
 			headBobStrength=0.124378;
 			actions="PistolStandActionsTacF";
 			InterpolateTo[]=
@@ -39173,7 +39099,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWpstDfl: AmovPercMtacSrasWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdfl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdfl.rtm";
 			actions="PistolStandActionsTacFL";
 			InterpolateTo[]=
 			{
@@ -39204,7 +39130,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSrasWpstDl: AmovPercMtacSrasWpstDf
 		{
 			speed=1.67255;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdl.rtm";
 			actions="PistolStandActionsTacL";
 			soundEdge[]={0.30000001,0.80000001};
 			InterpolateTo[]=
@@ -39232,7 +39158,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSrasWpstDb: AmovPercMtacSrasWpstDf
 		{
 			speed=0.81566602;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdb.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdb.rtm";
 			actions="PistolStandActionsTacB";
 			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_Db.p3d";
 			InterpolateTo[]=
@@ -39259,7 +39185,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWpstDbl: AmovPercMtacSrasWpstDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdbl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdbl.rtm";
 			actions="PistolStandActionsTacBL";
 			InterpolateTo[]=
 			{
@@ -39285,7 +39211,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWpstDbr: AmovPercMtacSrasWpstDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdbr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdbr.rtm";
 			actions="PistolStandActionsTacBR";
 			InterpolateTo[]=
 			{
@@ -39312,7 +39238,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSrasWpstDr: AmovPercMtacSrasWpstDf
 		{
 			speed=1.45696;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdr.rtm";
 			actions="PistolStandActionsTacR";
 			soundEdge[]={0.22,0.80000001};
 			InterpolateTo[]=
@@ -39339,7 +39265,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWpstDfr: AmovPercMtacSrasWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdfr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\pst\amovpercmtacsraswpstdfr.rtm";
 			actions="PistolStandActionsTacFR";
 			InterpolateTo[]=
 			{
@@ -40604,7 +40530,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			aimPrecision=5;
 			limitgunmovement=1;
 			speed=0.767223;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdf.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdf.rtm";
 			camShakeFire=1.15;
 			duty=0.40000001;
 			headBobStrength=0.164179;
@@ -40639,7 +40565,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWpstDfl: AmovPknlMtacSrasWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdfl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdfl.rtm";
 			actions="PistolKneelActionsTacFL";
 			InterpolateTo[]=
 			{
@@ -40668,7 +40594,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMtacSrasWpstDl: AmovPknlMtacSrasWpstDf
 		{
 			speed=1.50659;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdl.rtm";
 			actions="PistolKneelActionsTacL";
 			soundEdge[]={0.5,1};
 			InterpolateTo[]=
@@ -40694,7 +40620,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMtacSrasWpstDb: AmovPknlMtacSrasWpstDf
 		{
 			speed=0.65519702;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdb.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdb.rtm";
 			actions="PistolKneelActionsTacB";
 			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_Db.p3d";
 			InterpolateTo[]=
@@ -40719,7 +40645,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWpstDbl: AmovPknlMtacSrasWpstDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdbl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdbl.rtm";
 			actions="PistolKneelActionsTacBL";
 			InterpolateTo[]=
 			{
@@ -40743,7 +40669,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWpstDbr: AmovPknlMtacSrasWpstDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdbr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdbr.rtm";
 			actions="PistolKneelActionsTacBR";
 			InterpolateTo[]=
 			{
@@ -40768,7 +40694,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPknlMtacSrasWpstDr: AmovPknlMtacSrasWpstDf
 		{
 			speed=1.3986;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdr.rtm";
 			actions="PistolKneelActionsTacR";
 			soundEdge[]={0.5,1};
 			InterpolateTo[]=
@@ -40793,7 +40719,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWpstDfr: AmovPknlMtacSrasWpstDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdfr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\pst\amovpknlmtacsraswpstdfr.rtm";
 			actions="PistolKneelActionsTacFR";
 			InterpolateTo[]=
 			{
@@ -41901,7 +41827,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			stamina=-0.1;
 			visibleSize=0.60000002;
 			actions="LauncherKneelActionstacF";
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdf.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdf.rtm";
 			speed=1;
 			relSpeedMin=0.80000001;
 			duty=0.5;
@@ -41946,7 +41872,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWlnrDfl: AmovPknlMtacSrasWlnrDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdfl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdfl.rtm";
 			actions="LauncherKneelActionstacFL";
 			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wnon.p3d";
 			InterpolateTo[]=
@@ -41979,7 +41905,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWlnrDl: AmovPknlMtacSrasWlnrDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdl.rtm";
 			speed=0.77777803;
 			actions="LauncherKneelActionstacL";
 			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wnon.p3d";
@@ -42011,7 +41937,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWlnrDb: AmovPknlMtacSrasWlnrDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdb.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdb.rtm";
 			speed=0.65645498;
 			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wrfl_Db.p3d";
 			actions="LauncherKneelActionstacB";
@@ -42043,7 +41969,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWlnrDbl: AmovPknlMtacSrasWlnrDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdbl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdbl.rtm";
 			actions="LauncherKneelActionstacBL";
 			InterpolateTo[]=
 			{
@@ -42073,7 +41999,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWlnrDbr: AmovPknlMtacSrasWlnrDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdbr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdbr.rtm";
 			actions="LauncherKneelActionstacBR";
 			InterpolateTo[]=
 			{
@@ -42103,7 +42029,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWlnrDr: AmovPknlMtacSrasWlnrDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdr.rtm";
 			speed=0.702811;
 			actions="LauncherKneelActionstacR";
 			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wnon.p3d";
@@ -42135,7 +42061,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPknlMtacSrasWlnrDfr: AmovPknlMtacSrasWlnrDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdfr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\knl\tac\ras\lnr\amovpknlmtacsraswlnrdfr.rtm";
 			actions="LauncherKneelActionstacFR";
 			collisionShape="A3\anims_f\Data\Geom\Sdr\Pknl_Wnon.p3d";
 			InterpolateTo[]=
@@ -90536,7 +90462,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			headBobStrength=0.164179;
 			speed=1.22699;
 			relSpeedMin=0.5;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdf.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdf.rtm";
 			duty=0.5;
 			soundOverride="walk";
 			soundEnabled=1;
@@ -90578,7 +90504,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWlnrDfl: AmovPercMtacSrasWlnrDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdfl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdfl.rtm";
 			actions="LauncherStandActionstacFL";
 			InterpolateTo[]=
 			{
@@ -90613,7 +90539,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSrasWlnrDl: AmovPercMtacSrasWlnrDf
 		{
 			speed=1.26697;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdl.rtm";
 			actions="LauncherStandActionstacL";
 			InterpolateTo[]=
 			{
@@ -90644,7 +90570,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSrasWlnrDb: AmovPercMtacSrasWlnrDf
 		{
 			speed=1.05033;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdb.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdb.rtm";
 			actions="LauncherStandActionstacB";
 			collisionShape="A3\anims_f\Data\Geom\Sdr\Perc_Wrfl_Db.p3d";
 			InterpolateTo[]=
@@ -90675,7 +90601,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWlnrDbl: AmovPercMtacSrasWlnrDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdbl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdbl.rtm";
 			actions="LauncherStandActionstacBL";
 			InterpolateTo[]=
 			{
@@ -90705,7 +90631,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWlnrDbr: AmovPercMtacSrasWlnrDb
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdbr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdbr.rtm";
 			actions="LauncherStandActionstacBR";
 			InterpolateTo[]=
 			{
@@ -90736,7 +90662,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class AmovPercMtacSrasWlnrDr: AmovPercMtacSrasWlnrDf
 		{
 			speed=1.12676;
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdr.rtm";
 			actions="LauncherStandActionstacR";
 			InterpolateTo[]=
 			{
@@ -90766,7 +90692,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWlnrDfr: AmovPercMtacSrasWlnrDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdfr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\lnr\amovpercmtacsraswlnrdfr.rtm";
 			actions="LauncherStandActionstacFR";
 			InterpolateTo[]=
 			{
@@ -93085,7 +93011,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWrflDf_AmovPercMtacSrasWlnrDf: AmovPercMtacSrasWrflDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldf_amovpercmtacsraswlnrdf.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldf_amovpercmtacsraswlnrdf.rtm";
 			actions="RifleStandActionsTacLnr";
 			speed=0.83333302;
 			looped=0;
@@ -93116,7 +93042,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWrflDf_AmovPercMtacSrasWlnrDf_2: AmovPercMtacSrasWlnrDf
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldf_amovpercmtacsraswlnrdf_2.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldf_amovpercmtacsraswlnrdf_2.rtm";
 			actions="RifleStandActionsTacLnr";
 			speed=0.57692301;
 			looped=0;
@@ -93141,7 +93067,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWrflDfl_AmovPercMtacSrasWlnrDfl: AmovPercMtacSrasWrflDfl
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldfl_amovpercmtacsraswlnrdfl.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldfl_amovpercmtacsraswlnrdfl.rtm";
 			actions="RifleStandActionsTacLnr";
 			speed=0.83333302;
 			looped=0;
@@ -93172,7 +93098,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWrflDfl_AmovPercMtacSrasWlnrDfl_2: AmovPercMtacSrasWlnrDfl
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldfl_amovpercmtacsraswlnrdfl_2.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldfl_amovpercmtacsraswlnrdfl_2.rtm";
 			actions="RifleStandActionsTacLnr";
 			speed=0.57692301;
 			looped=0;
@@ -93198,7 +93124,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWrflDfr_AmovPercMtacSrasWlnrDfr: AmovPercMtacSrasWrflDfr
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldfr_amovpercmtacsraswlnrdfr.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldfr_amovpercmtacsraswlnrdfr.rtm";
 			actions="RifleStandActionsTacLnr";
 			speed=0.83333302;
 			looped=0;
@@ -93230,7 +93156,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		};
 		class AmovPercMtacSrasWrflDfr_AmovPercMtacSrasWlnrDfr_2: AmovPercMtacSrasWlnrDfr
 		{
-			file="A2ATA3\a2a_anims\Anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldfr_amovpercmtacsraswlnrdfr_2.rtm";
+			file="a3\anims_f\data\anim\sdr\mov\erc\tac\ras\rfl\amovpercmtacsraswrfldfr_amovpercmtacsraswlnrdfr_2.rtm";
 			actions="RifleStandActionsTacLnr";
 			speed=0.57692301;
 			enableMissile=1;
