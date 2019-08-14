@@ -1,11 +1,16 @@
-//@A2ATA3 CHANGELOG : Last Update - 19 FEB 2019.\\
+|| @A2ATA3 CHANGELOG : Last Update - 14 AUG 2019. ||
 
+_________________________________________________________
+v0.9.2.1 : 14 AUG 2019
+[EDIT] New logo.
+
+-- .bikey updated
 _________________________________________________________
 v0.9.2A : 19 FEB 2019 | HOTFIX
 - updated version in $PBOPREFIX$.
 _________________________________________________________
 v0.9.2 : 17 FEB 2019
-[NEW] .bisign updated to v3
+[NEW] .bisign updated to v3.
 [FIX] Fixed animation freeze when player trying to sprint while aiming in [Player > Main Weapon > Raised (Aiming) > Stand > Sprint].
 [EDIT] File structure reworked.
 [REMOVED] Removed useless classes from 'A2ATA3\a2a_data\anims_cfg.hpp'.
