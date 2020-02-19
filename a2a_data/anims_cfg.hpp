@@ -22838,7 +22838,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 		class BasicSittingGunner;
 		class SprintBaseDf: StandBase
 		{
-			stamina=-0.8; //Sprint Stamina Changed
+			stamina=-0.8; // Sprint Stamina Changed
 			canPullTrigger=0;
 			aimPrecision=7;
 			turnSpeed=2;
@@ -33107,7 +33107,7 @@ class CfgMovesMaleSdr: CfgMovesBasic
 			actions="RifleLowStandActionsRunF";
 			Walkcycles=2;
 			headBobStrength=0.23;
-			interpolationSpeed=3;
+			interpolationSpeed=3.4;
 			ConnectTo[]={};
 			InterpolateTo[]=
 			{

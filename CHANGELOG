@@ -1,6 +1,13 @@
 || @A2ATA3 CHANGELOG : Last Update - 14 AUG 2019. ||
 
 _________________________________________________________
+v0.9.X : XX XX XXXX
+[FIX] Reduced stuttering of the [ Player > Unarmed > Stand > Sprint ] animation.
+[EDIT] Increased interpolation speed for [ Player > Main Weapon = Low > Run ]
+[EDIT] Changed name of the mod in mod.cpp.
+[EDIT] Localization update.
+[EDIT] Ingame mod overview image update.
+_________________________________________________________
 v0.9.2.1 : 14 AUG 2019
 [EDIT] New logo.
 
