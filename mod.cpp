@@ -1,0 +1,10 @@
+name = "ARMA 2 Animations To ARMA 3";
+author = "MAXIMILI";
+dir = "@A2ATA3";
+picture = "A2ATA3\a2a_data\img\a2ata3_overview.paa"; // Picture displayed from the Expansions menu (*full)
+logoSmall = "A2ATA3\a2a_data\img\a2ata3_icon.paa"; // Display next to the item added by the mod (*small)
+logo = "A2ATA3\a2a_data\img\a2ata3_icon.paa"; // Logo displayed in the main menu (*small)
+description = "";
+overview = "$STR_a2ata3_overview";
+hideName = 0;
+hidePicture = 0;
